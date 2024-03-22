@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #fff; /* White background */
             color: rgb(0, 0, 102); /* Dark blue text color */
+            display: flex; /* Use flexbox to make footer stretch */
+            flex-direction: column; /* Column layout */
+            min-height: 100vh; /* Ensure full height */
         }
         header {
             padding: 20px;
@@ -55,93 +58,42 @@
             margin-top: 20px;
             padding: 10px;
             text-align: center; /* Center the timeline */
+            display: flex; /* Center the timeline items */
+            flex-direction: column;
+            align-items: center;
         }
-
         .timeline:before {
             content: '';
             position: absolute;
             left: 50%;
+            top: 0;
+            bottom: 0;
             width: 2px;
-            height: 100%;
             background: #333;
+            z-index: 0;
         }
-
         .timeline-item {
             display: flex;
             margin-bottom: 40px;
             position: relative;
             text-align: center; /* Center the timeline items */
+            z-index: 1;
         }
-
         .timeline-content {
             background-color: #f9f9f9;
             border-radius: 5px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             position: relative;
-        }
-
-        .timeline-content h3 {
-            margin-top: 0;
-            font-size: 1.2rem;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content {
-            background-color: #e0e0e0;
-        }
-
-        .timeline-item:nth-child(even)::before {
-            background-color: #999;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -6px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #333;
             z-index: 1;
-        }
-        .timeline-item:last-child::before {
-            display: none;
-        }
-        .experience {
-            margin-bottom: 40px;
-            border-bottom: 1px solid #777; /* Add border between experiences */
-            padding-bottom: 20px; /* Add some space at the bottom of each experience */
-        }
-        .experience img {
-            max-width: 100px; /* Limit the width of the logo */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 10px; /* Add some space below the logo */
-        }
-        .experience h3 {
-            color: #ffcc00; /* Yellow */
-            margin-bottom: 10px; /* Add some space below the heading */
-        }
-        .experience p {
-            margin-bottom: 10px; /* Add some space below each paragraph */
-        }
-        .experience ul {
-            list-style-type: none; /* Remove bullets from the list */
-            padding: 0; /* Remove default padding */
-            margin-top: 0; /* Remove default margin */
-            text-align: left; /* Align list items to the left */
-        }
-        .experience ul li {
-            margin-bottom: 5px; /* Add some space below each list item */
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0
+            /* Keep footer at the bottom */
+            flex-shrink: 0;
         }
     </style>
 </head>
@@ -153,40 +105,38 @@
             <a href="https://www.linkedin.com/in/ethan-d-farley" target="_blank">LinkedIn</a>
         </nav>
     </header>
-    <section id="timeline" class="section" style="text-align: center;">
-    <h2>Timeline</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Fall 2018 - Spring 2022: Lane Tech High School</h3>
+    <section id="timeline" class="section">
+        <h2>Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Fall 2018 - Spring 2022: Lane Tech High School</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Fall 2022 - Spring 2026: University of Notre Dame</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Spring 2023: Business Research Assistant with Mike Mannor</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>May 2024 - July 2024: Berlin Summer Engineering</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Fall 2024: Study Abroad Dublin City University</h3>
+                </div>
             </div>
         </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Fall 2022 - Spring 2026: University of Notre Dame</h3>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Spring 2023: Business Research Assistant with Mike Mannor</h3>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>May 2024 - July 2024: Berlin Summer Engineering</h3>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Fall 2024: Study Abroad Dublin City University</h3>
-            </div>
-        </div>
-    </div>
-</section>
-        </section>
+    </section>
     <div class="container">
         <h2>Experiences</h2>
-        
         <div class="experience">
             <h3>IDEA Center, Fellow</h3>
             <p>The IDEA Center at the University of Notre Dame</p>
@@ -198,7 +148,6 @@
             </ul>
             <p>Entrepreneurship, Start-up Ventures and +1 skill</p>
         </div>
-
         <div class="experience">
             <h3>Instructor</h3>
             <p>The Center for Wooden Boats</p>
@@ -211,11 +160,7 @@
             </ul>
             <p>Leadership, Problem Solving and +4 skills</p>
         </div>
-
-        <!-- Repeat the above structure for other experiences -->
-        
     </div>
-    
     <footer>
         <p>&copy; 2024 My Personal Website. All rights reserved.</p>
     </footer>
