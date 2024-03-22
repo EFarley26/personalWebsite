@@ -12,26 +12,26 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #333;
+            background-color: #001489; /* Dark Blue */
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
         nav {
             margin-top: 20px;
             text-align: center;
         }
         nav a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: #fff;
+            background-color: #333;
             margin: 0 5px;
         }
         nav a:hover {
             background-color: #555;
-            color: #fff;
         }
         .container {
             max-width: 800px;
@@ -47,10 +47,17 @@
             bottom: 0;
             width: 100%;
         }
+        .notre-dame-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px; /* Adjust the size of the logo as needed */
+        }
     </style>
 </head>
 <body>
     <header>
+        <img class="notre-dame-logo" src="notre-dame-logo.png" alt="Notre Dame Logo">
         <h1>Welcome to My Personal Website</h1>
         <nav>
             <a href="/">Home</a>
