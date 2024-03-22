@@ -6,7 +6,7 @@
     <title>My Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Consolas, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fff; /* White background */
@@ -54,12 +54,14 @@
         }
         /* Timeline Styles */
         #timeline-container {
-            background-color: rgb(0, 0, 102); /* Dark blue background */
+             background-color: rgb(0, 0, 102); /* Dark blue background */
             color: #fff; /* White text color */
             border-radius: 20px; /* Curved edges */
             padding: 20px;
             margin: 20px auto;
             max-width: 800px;
+            position: relative; /* Added */
+            z-index: 0; /* Added */
         }
         .timeline {
             position: relative;
