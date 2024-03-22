@@ -4,32 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Personal Website</h1>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn</a></li>
-            </ul>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
         </nav>
     </header>
-    
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a brief introduction about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
+
+    <div class="container">
+        <h2>About Me</h2>
+        <p>This is a brief introduction about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         
-        <section>
-            <h2>My Portfolio</h2>
-            <p>Here, you can find examples of my work and projects I've completed.</p>
-        </section>
-    </main>
+        <h2>My Portfolio</h2>
+        <p>Here, you can find examples of my work and projects I've completed.</p>
+    </div>
     
     <footer>
         <p>&copy; 2024 My Personal Website. All rights reserved.</p>
