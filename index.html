@@ -19,8 +19,8 @@
         }
         .profile-img {
             border-radius: 50%;
-            width: 200px; /* Adjust width */
-            height: 200px; /* Adjust height */
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             margin: 0 auto 20px auto; /* Center the image */
             display: block; /* Make sure the image is displayed as a block element */
@@ -44,24 +44,33 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            text-align: left; /* Align content to the left */
+            text-align: center; /* Center the content */
         }
         .experience {
             margin-bottom: 40px;
+            border-bottom: 1px solid #777; /* Add border between experiences */
+            padding-bottom: 20px; /* Add some space at the bottom of each experience */
+        }
+        .experience img {
+            max-width: 100px; /* Limit the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add some space below the logo */
         }
         .experience h3 {
-            margin-bottom: 10px;
             color: #ffcc00; /* Yellow */
+            margin-bottom: 10px; /* Add some space below the heading */
         }
         .experience p {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Add some space below each paragraph */
         }
         .experience ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: none; /* Remove bullets from the list */
+            padding: 0; /* Remove default padding */
+            margin-top: 0; /* Remove default margin */
+            text-align: left; /* Align list items to the left */
         }
         .experience ul li {
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* Add some space below each list item */
         }
         footer {
             background-color: #333;
@@ -86,7 +95,34 @@
     <div class="container">
         <h2>Experiences</h2>
         
-        <!-- Experiences section goes here -->
+        <div class="experience">
+            <img src="IDEA_Center_Logo.png" alt="IDEA Center Logo">
+            <h3>IDEA Center, Fellow</h3>
+            <p>The IDEA Center at the University of Notre Dame</p>
+            <p>Aug 2022 - Present · 1 yr 8 mos</p>
+            <p>Notre Dame, Indiana, United States · On-site</p>
+            <ul>
+                <li>Selected to participate in Notre Dame’s Idea and Innovation Center to develop hands-on entrepreneurial and venture creation experience.</li>
+                <li>Trained on market research and start-up trials and lessons.</li>
+            </ul>
+            <p>Entrepreneurship, Start-up Ventures and +1 skill</p>
+        </div>
+
+        <div class="experience">
+            <img src="Center_for_Wooden_Boats_Logo.png" alt="The Center for Wooden Boats Logo">
+            <h3>Instructor</h3>
+            <p>The Center for Wooden Boats</p>
+            <p>Jul 2023 - Present · 9 mos</p>
+            <p>Seattle, Washington, United States · On-site</p>
+            <ul>
+                <li>Returned as full-time Instructor for summer programs; taught introductory sailing and woodworking classes to children ages 8-12; class size 15-23. Responsible for safety and security of kids, while creating a fun, positive experience on Seattle's busy Lake Union.</li>
+                <li>Supervised junior instructors and interns; adjusted daily assignments based on needs of kids and skills of team.</li>
+                <li>Educated kids on the basic parts of a sailboat, knots and lines, water safety, how to rig/de-rig sails, capsize, steer, find the wind, and navigate on the water.</li>
+            </ul>
+            <p>Leadership, Problem Solving and +4 skills</p>
+        </div>
+
+        <!-- Repeat the above structure for other experiences -->
         
     </div>
     
